@@ -34,5 +34,26 @@ export const Box = styled.div`
 `;
 
 export const Container = styled.div`
-  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Grid = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  align-items: center;
+  > strong {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  > label{
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 20px;
+  }
 `;

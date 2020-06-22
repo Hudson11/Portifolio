@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Content, LabelSection, Container, Box } from './style';
+import { Content, LabelSection, Container, Box, Grid } from './style';
 
 const ContentContato: React.FC = () => {
   return (
@@ -12,7 +12,11 @@ const ContentContato: React.FC = () => {
         <LabelSection>
           Contato
         </LabelSection>
-        
+        <Grid>
+          <strong> Entre em contato comigo da forma que preferir </strong>
+          <label> Whatsapp: 84988785181 </label>
+          <label> Email: hudsonhdj36@gmail.com </label>
+        </Grid>
       </Container>
     </Content>
   );

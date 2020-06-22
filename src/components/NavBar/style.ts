@@ -64,7 +64,7 @@ export const Nav = styled.nav<Props>`
 
   @media screen and (max-width: 700px){
     > ul {
-      transition: display 0.4s ease;
+      height: 250px;
       display: ${props => props.open ? 'flex' : 'none'};
       flex-direction: column;
       align-items: center;
@@ -75,6 +75,7 @@ export const Nav = styled.nav<Props>`
       padding: none;
       margin: none;
       background-color: black;
+      animation: ex5 0.7s;
     }
     > button {
       display: block;
@@ -82,6 +83,16 @@ export const Nav = styled.nav<Props>`
     display: flex;
     align-items: center;
     justify-content: flex-end;
+  }
+
+  @keyframes ex5 {
+    from {
+      opacity: 0;
+      height: 0px;
+    } to {
+      opacity: 1;
+      height: 250px;
+    }
   }
 
 `;

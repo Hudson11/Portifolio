@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { FooterBar, Container, Grid, Logo } from './style';
+import { FooterBar, Container } from './style';
 
 const Footer: React.FC = () => {
   return(
